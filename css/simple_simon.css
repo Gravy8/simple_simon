@@ -6,6 +6,9 @@
     height: 420px;
     margin-top: 50px;
 }
+.game-box-row {
+    height: 50%;
+}
 #top-left {
     background: red;
 }
