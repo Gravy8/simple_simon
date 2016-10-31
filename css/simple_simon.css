@@ -1,0 +1,27 @@
+.main {
+    width: 100%;
+}
+.simon-boxes-container {
+    border: 2px solid black;
+    height: 420px;
+    margin-top: 50px;
+}
+#top-left {
+    background: red;
+}
+#top-right {
+    background: blue;
+}
+#bottom-left {
+    background: yellow;
+}
+#bottom-right {
+    background: green;
+}
+.game-boxes {
+    height: 100%;
+    opacity: .7;
+}
+#level-text {
+    display: none;
+}
