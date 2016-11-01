@@ -16,14 +16,14 @@
     background: blue;
 }
 #bottom-left {
-    background: yellow;
+    background: purple;
 }
 #bottom-right {
     background: green;
 }
 .game-boxes {
     height: 100%;
-    opacity: .7;
+    opacity: .5;
 }
 #level-text {
     display: none;
