@@ -37,6 +37,7 @@ var game = {
                 audio = $("#audio4")[0];
                 break;
         }
+        audio.currentTime = 0;
         audio.play();
     },
     gameSequence: [],                                       //generated sequence
