@@ -3,7 +3,7 @@ var game = {
     nextClickPosition: 0,                                   //which spot in the sequence to check
     active: false,                                          //whether or not the buttons are currently working
     buttons: false,                                         //whether or not the buttons have been turned on for the first time (on first play from page load)
-    flash: function (element, timesToFlash, speed) {        //what makes the flashing animation happen
+    flash: function (element, timesToFlash, speed) {        //what makes the flashing animation happen and plays audio when animating
         var that = this;                                    //timesToFlash is exclusively for the incorrect sequence function
         if (timesToFlash > 0) {
             this.playSound(element);
