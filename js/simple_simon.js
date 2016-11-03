@@ -6,6 +6,7 @@ var game = {
     flash: function (element, timesToFlash, speed) {        //what makes the flashing animation happen
         var that = this;                                    //timesToFlash is exclusively for the incorrect sequence function
         if (timesToFlash > 0) {
+            this.playSound(element);
             element.stop().animate({opacity: "1"}, {
                 duration: 50,
                 complete: function () {
@@ -19,6 +20,24 @@ var game = {
                 that.flash(element, timesToFlash, speed);
             }, speed);
         }
+    },
+    playSound: function (element) {                         //determines which sound to play based on the id of the element
+        var audio;
+        switch ($(element).attr("id")) {
+            case "top-left":
+                audio = $("#audio1")[0];
+                break;
+            case "top-right":
+                audio = $("#audio2")[0];
+                break;
+            case "bottom-left":
+                audio = $("#audio3")[0];
+                break;
+            case "bottom-right":
+                audio = $("#audio4")[0];
+                break;
+        }
+        audio.play();
     },
     gameSequence: [],                                       //generated sequence
     playerSequence: [],                                     //player entered sequence
